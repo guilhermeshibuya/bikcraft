@@ -7,9 +7,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 .intro__content {
@@ -20,7 +17,6 @@
 .intro img {
   height: 100%;
   object-fit: cover;
-  border-radius: 4px;
 }
 
 .intro h1 {

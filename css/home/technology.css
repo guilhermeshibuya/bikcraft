@@ -1,0 +1,23 @@
+.tech__bg {
+  background-color: var(--color-11);
+  box-shadow: inset 0 -80px var(--color-0), inset 0 80px var(--color-0);
+}
+
+.tech {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tech h3 {
+  margin-bottom: 20px;
+}
+
+.tech h2 {
+  margin-bottom: 32px;
+}
+
+.tech__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

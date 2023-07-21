@@ -1,3 +1,11 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px;
+}
+
 .btn {
   display: inline-block;
   padding: 16px 32px;
@@ -11,6 +19,14 @@
 
 .btn:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+
+.link {
+  display: inline-block;
+  color: var(--color-p1);
+  font: 400 1.5rem/1.5 "Poppins", sans-serif;
+  text-transform: uppercase;
+  border-bottom: 4px solid var(--color-p1);
 }
 
 @media (max-width: 600px) {
