@@ -13,4 +13,6 @@
 @import "./home/technology.css";
 @import "./home/partners.css";
 @import "./home/testimonial.css";
-@import "./home/insurance.css";
+@import "./insurance/insurance.css";
+
+@import "./global/footer.css";
