@@ -9,7 +9,6 @@
 
 /* HOME */
 @import "./home/intro.css";
-@import "./bikes/bikes-list.css";
 @import "./home/technology.css";
 @import "./home/partners.css";
 @import "./home/testimonial.css";
@@ -18,3 +17,6 @@
 @import "./global/footer.css";
 
 @import "./terms/terms.css";
+
+@import "./bikes/bikes-list.css";
+@import "./bikes/bikes.css";
