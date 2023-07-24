@@ -1,0 +1,49 @@
+.insurance-bike__bg {
+  background-color: var(--color-11);
+  box-shadow: inset 0 120px var(--color-0), inset 0 -120px var(--color-12);
+}
+
+.insurance-bike {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.insurance-bike__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.insurance-bike__content {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
+.insurance-bike__content h2 {
+  margin-bottom: 32px;
+}
+
+.insurance-bike__content p {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 800px) {
+  .insurance-bike__bg {
+    box-shadow: inset 0 -60px var(--color-12);
+  }
+
+  .insurance-bike {
+    grid-template-columns: 1fr;
+  }
+
+  .insurance-bike__img {
+    max-height: 400px;
+  }
+
+  .insurance-bike__content {
+    grid-row: 1;
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+}

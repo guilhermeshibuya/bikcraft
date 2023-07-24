@@ -1,0 +1,38 @@
+.benefits__bg {
+  background-color: var(--color-12);
+  --padding: 120px;
+}
+
+.benefits {
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+
+.benefits h2 {
+  margin-bottom: 60px;
+}
+
+.benefits__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  gap: 40px 80px;
+}
+
+.benefits__list img,
+.benefits__list h3 {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 800px) {
+  .benefits {
+    --padding: 60px;
+  }
+
+  .benefits h2 {
+    margin-bottom: 40px;
+  }
+
+  .benefits__list {
+    gap: 20px;
+  }
+}

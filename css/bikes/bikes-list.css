@@ -3,6 +3,10 @@
   padding-bottom: 120px;
 }
 
+#bike .bikes__list {
+  padding-top: 120px;
+}
+
 .bikes__list h2 {
   margin-bottom: 40px;
 }
@@ -14,6 +18,10 @@
   margin: 0 auto;
   max-width: 1400px;
   overflow-x: auto;
+}
+
+#bike .bikes__list-item {
+  padding: 0 0 20px 0;
 }
 
 .bikes__list-item li {
@@ -56,6 +64,10 @@
 @media (max-width: 800px) {
   .bikes__list {
     padding-bottom: 60px;
+  }
+
+  #bike .bikes__list {
+    padding-top: 60px;
   }
 
   .bikes__list-item {

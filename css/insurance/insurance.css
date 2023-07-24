@@ -11,6 +11,10 @@
   padding-bottom: 60px;
 }
 
+#insurance .insurance {
+  padding-top: 0px;
+}
+
 .insurance h2 {
   grid-column: 1 / -1;
 }
@@ -60,7 +64,7 @@
 
 .insurance__item a {
   grid-column: 1 / -1;
-}
+} 
 
 @media (max-width: 800px) {
   .insurance {

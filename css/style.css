@@ -2,7 +2,9 @@
 @import "./utilities/typography.css";
 @import "./utilities/colors.css";
 
+/* HEADER E FOOTER */
 @import "./global/header.css";
+@import "./global/footer.css";
 
 /* COMPONENTS */
 @import "./utilities/components.css";
@@ -12,11 +14,19 @@
 @import "./home/technology.css";
 @import "./home/partners.css";
 @import "./home/testimonial.css";
-@import "./insurance/insurance.css";
 
-@import "./global/footer.css";
-
+/* TERMOS E CONDIÇÕES */
 @import "./terms/terms.css";
 
+/* BICICLETAS */
 @import "./bikes/bikes-list.css";
 @import "./bikes/bikes.css";
+
+/* BICICLETA */
+@import "./bike/bike.css";
+@import "./bike/insurance.css";
+
+/* SEGUROS */
+@import "./insurance/insurance.css";
+@import "./insurance/benefits.css";
+@import "./insurance/questions.css";
