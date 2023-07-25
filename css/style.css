@@ -8,15 +8,13 @@
 
 /* COMPONENTS */
 @import "./utilities/components.css";
+@import "./utilities/form.css";
 
 /* HOME */
 @import "./home/intro.css";
 @import "./home/technology.css";
 @import "./home/partners.css";
 @import "./home/testimonial.css";
-
-/* TERMOS E CONDIÇÕES */
-@import "./terms/terms.css";
 
 /* BICICLETAS */
 @import "./bikes/bikes-list.css";
@@ -30,3 +28,10 @@
 @import "./insurance/insurance.css";
 @import "./insurance/benefits.css";
 @import "./insurance/questions.css";
+
+/* CONTATO */
+@import "./contact/contact.css";
+@import "./contact/store.css";
+
+/* TERMOS E CONDIÇÕES */
+@import "./terms/terms.css";
