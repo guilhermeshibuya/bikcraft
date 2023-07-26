@@ -8,6 +8,7 @@
 
   <title>Bikcraft - Bicicletas Elétricas</title>
   <!-- CSS -->
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
   <!-- FONTES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +20,7 @@
   <header class="header__bg">
     <div class="header container">
       <a href="./">
-        <img src="./img/bikcraft.svg" alt="Bikcraft">
+        <img src="./img/bikcraft.svg" width="136" height="32" alt="Bikcraft">
       </a>
       <nav aria-label="Primária">
         <ul class="header__menu font-1-m color-0">
@@ -54,9 +55,10 @@
         </p>
         <a class="btn" href="./bicicletas.html">Escolha a sua</a>
       </article>
-      <div>
-        <img src="./img/fotos/introducao.jpg" alt="Bicicleta elétrica preta.">
-      </div>
+      <picture>
+        <source media="(max-width: 800px)" srcset="./img/bicicletas/nimbus.jpg">
+        <img src="./img/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta elétrica preta.">
+      </picture>
     </div>
   </main>
 
@@ -68,7 +70,7 @@
       <!-- Magic Might -->
       <li>
         <a href="./bicicletas/magic.html">
-          <img src="./img/bicicletas/magic-home.jpg" alt="Bicicleta Preta">
+          <img src="./img/bicicletas/magic-home.jpg" width="920" height="1040" alt="Bicicleta Preta">
           <h3 class="font-1-xl">
             Magic Might
           </h3>
@@ -80,7 +82,7 @@
       <!-- Nimbus Stark -->
       <li>
         <a href="./bicicletas/nimbus.html">
-          <img src="./img/bicicletas/nimbus-home.jpg" alt="Bicicleta Preta">
+          <img src="./img/bicicletas/nimbus-home.jpg" width="920" height="1040" alt="Bicicleta Preta">
           <h3 class="font-1-xl">
             Nimbus Stark
           </h3>
@@ -92,7 +94,7 @@
       <!-- Nebula Cosmic -->
       <li>
         <a href="./bicicletas/nebula.html">
-          <img src="./img/bicicletas/nebula-home.jpg" alt="Bicicleta Branca">
+          <img src="./img/bicicletas/nebula-home.jpg" width="920" height="1040" alt="Bicicleta Branca">
           <h3 class="font-1-xl">
             Nebula Cosmic
           </h3>
@@ -120,7 +122,7 @@
         <ul class="tech__list">
           <!--  Motor Elétrico -->
           <li>
-            <img src="./img/icones/eletrica.svg" alt="">
+            <img src="./img/icones/eletrica.svg" width="24" height="24" alt="">
             <h3 class="font-1-m color-0">
               Motor Elétrico
             </h3>
@@ -130,7 +132,7 @@
           </li>
           <!-- Rastreador -->
           <li>
-            <img src="./img/icones/rastreador.svg" alt="">
+            <img src="./img/icones/rastreador.svg" width="24" height="24" alt="">
             <h3 class="font-1-m color-0">
               Rastreador
             </h3>
@@ -141,7 +143,7 @@
         </ul>
       </div>
       <div class="tech__img">
-        <img src="./img/fotos/tecnologia.jpg" alt="">
+        <img src="./img/fotos/tecnologia.jpg" width="1200" height="1920" alt="">
       </div>
     </div>
   </article>
@@ -152,35 +154,35 @@
     </h2>
     <ul class="partners__list">
       <li>
-        <img src="./img/parceiros/caravan.svg" alt="Caravan">
+        <img src="./img/parceiros/caravan.svg" width="140" height="38" alt="Caravan">
       </li>
       <li>
-        <img src="./img/parceiros/ranek.svg" alt="Ranek">
+        <img src="./img/parceiros/ranek.svg" width="149" height="36" alt="Ranek">
       </li>
       <li>
-        <img src="./img/parceiros/handel.svg" alt="Handel">
+        <img src="./img/parceiros/handel.svg" width="139" height="50" alt="Handel">
       </li>
       <li>
-        <img src="./img/parceiros/dogs.svg" alt="Dogs">
+        <img src="./img/parceiros/dogs.svg" width="152" height="39" alt="Dogs">
       </li>
       <li>
-        <img src="./img/parceiros/lescone.svg" alt="LeScone">
+        <img src="./img/parceiros/lescone.svg" width="208" height="41" alt="LeScone">
       </li>
       <li>
-        <img src="./img/parceiros/flexblog.svg" alt="FlexBlog">
+        <img src="./img/parceiros/flexblog.svg" width="165" height="38" alt="FlexBlog">
       </li>
       <li>
-        <img src="./img/parceiros/wildbeast.svg" alt="Wildbeast">
+        <img src="./img/parceiros/wildbeast.svg" width="196" height="34" alt="Wildbeast">
       </li>
       <li>
-        <img src="./img/parceiros/surfbot.svg" alt="Surfbot">
+        <img src="./img/parceiros/surfbot.svg" width="200" height="49" alt="Surfbot">
       </li>
     </ul>
   </section>
 
   <section class="testimonial" aria-label="Depoimento">
     <div>
-      <img src="./img/fotos/depoimento.jpg" alt="Pessoa pedalando uma bicicleta Bikcraft">
+      <img src="./img/fotos/depoimento.jpg" width="1560" height="1360" alt="Pessoa pedalando uma bicicleta Bikcraft">
     </div>
     <div class="testimonial__content">
       <blockquote class="font-1-xl color-p5">
@@ -251,7 +253,7 @@
   <footer class="footer__bg">
     <div class="footer__content container">
       <div class="footer__img">
-        <img src="./img/bikcraft.svg" alt="Bikcraft">
+        <img src="./img/bikcraft.svg" width="136" height="32" alt="Bikcraft">
       </div>
       <div class="footer__contact">
         <h3 class="font-2-l-b color-0">
@@ -278,17 +280,17 @@
         <ul class="footer__social">
           <li>
             <a href="./">
-              <img src="./img/redes/instagram.svg" alt="Instagram">
+              <img src="./img/redes/instagram.svg" width="32" height="32" alt="Instagram">
             </a>
           </li>
           <li>
             <a href="./">
-              <img src="./img/redes/facebook.svg" alt="Facebook">
+              <img src="./img/redes/facebook.svg" width="32" height="32" alt="Facebook">
             </a>
           </li>
           <li>
             <a href="./">
-              <img src="./img/redes/youtube.svg" alt="Youtube">
+              <img src="./img/redes/youtube.svg" width="32" height="32" alt="Youtube">
             </a>
           </li>
         </ul>

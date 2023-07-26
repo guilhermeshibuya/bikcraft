@@ -1,0 +1,189 @@
+#budget {
+  background: linear-gradient(var(--color-11) 600px, var(--color-1) 0px);
+}
+
+.budget {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding-bottom: 120px;
+}
+
+.budget h2 {
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.budget h2::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 8px;
+  background: linear-gradient(#ffbf00, #f2a60c);
+  position: absolute;
+  left: -12px;
+}
+
+.budget__product,
+.budget__data {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.budget__product {
+  border-radius: 4px 0 0 4px;
+  background: var(--color-12) url("../../img/dec/bottom-left.svg") no-repeat
+    bottom 20px left 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  gap: 20px;
+}
+
+.budget__product > * {
+  grid-column: 1 / -1;
+}
+
+.budget__product > label {
+  grid-column: initial;
+}
+
+.budget__product label {
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+  color: var(--color-4);
+  background-color: var(--color-10);
+  padding: 12px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  /* border: 1px solid var(--color-10); */
+}
+
+.budget__product input:checked + label {
+  background-color: var(--color-0);
+  color: var(--color-11);
+}
+
+.budget__product label::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--color-6);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.budget__product input:checked + label::before {
+  border-color: var(--color-7);
+  box-shadow: inset 0 0 0 3px var(--color-0), inset 0 0 0 6px var(--color-7);
+}
+
+.budget__product label:hover {
+  background-color: var(--color-9);
+  border-color: var(--color-9);
+}
+
+.budget__product input:focus + label {
+  box-shadow: 0 0 2px var(--color-p1);
+  border-radius: 4px 4px 0 0;
+  /* border-color: var(--color-12); */
+}
+
+#budget-bikcraft input:checked + label {
+  border-radius: 4px 4px 0 0;
+}
+
+.budget__product label span {
+  display: none;
+}
+
+.budget__product input:checked + label span {
+  display: inline-block;
+}
+
+.budget__product input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.budget__data {
+  border-radius: 0 4px 4px 0;
+  background: var(--color-0) url("../../img/dec/bottom-right.svg") no-repeat
+    bottom 20px right 20px;
+}
+
+.budget__content {
+  display: none;
+}
+
+.budget__content h2,
+.budget__data h2:nth-of-type(n + 2) {
+  margin-top: 20px;
+}
+
+#bikcraft:checked ~ #budget-bikcraft,
+#insurance:checked ~ #budget-insurance {
+  display: grid;
+}
+
+#bikcraft:checked ~ #budget-bikcraft label,
+#insurance:checked ~ #budget-insurance label {
+  margin-top: 20px;
+}
+
+.budget__details {
+  display: none;
+  background-color: var(--color-0);
+  padding: 16px;
+  border-radius: 0 0 4px 4px;
+}
+
+.budget__details li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.budget__details li img {
+  width: 16px;
+  margin-right: 8px;
+}
+
+.budget__product input:checked + label + .budget__details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .budget__product,
+  .budget__data {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .budget {
+    grid-template-columns: 1fr;
+  }
+
+  .budget__product {
+    border-radius: 4px 4px 0 0;
+    background: var(--color-12);
+  }
+
+  .budget__data {
+    border-radius: 0 0 4px 4px;
+  }
+}
+
+@media (max-width: 400px) {
+  .budget__product {
+    grid-template-columns: 1fr;
+  }
+}

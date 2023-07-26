@@ -10,6 +10,8 @@
 .contact__data {
   background-color: var(--color-12);
   border-radius: 4px 0 0 4px;
+  background: var(--color-12) url("../../img/dec/bottom-left.svg") no-repeat
+    bottom 20px left 20px;
 }
 
 .contact__data,
@@ -19,8 +21,9 @@
 }
 
 .contact__form {
-  background-color: var(--color-0);
   border-radius: 0px 4px 4px 0;
+  background: var(--color-0) url("../../img/dec/bottom-right.svg") no-repeat
+    bottom 20px right 20px;
 }
 
 .contact__data h2 {
@@ -79,6 +82,7 @@
 
   .contact__data {
     border-radius: 4px 4px 0 0;
+    background: var(--color-12);
   }
 
   .contact__form {
