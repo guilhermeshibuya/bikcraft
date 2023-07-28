@@ -36,6 +36,10 @@
   box-shadow: 0 0 2px #fea;
 }
 
+.form textarea {
+  resize: none;
+}
+
 @media (max-width: 600px) {
   .form {
     grid-template-columns: 1fr;
