@@ -50,11 +50,11 @@
   transform: rotate(180deg);
 }
 
-.questions__list dd {
+.js .questions__list dd {
   display: none;
 }
 
-.questions__list dd.active {
+.js .questions__list dd.active {
   display: block;
 }
 
