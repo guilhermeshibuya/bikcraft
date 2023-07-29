@@ -47,15 +47,15 @@
   <main class="intro__bg color-0">
     <div class="intro container">
       <article class="intro__content" aria-labelledby="label-intro">
-        <h1 id="label-intro" class="font-1-xxl">
+        <h1 id="label-intro" class="font-1-xxl fadeInDown" data-anime="200">
           Bicicletas feitas sob medida<span class="color-p1">.</span>
         </h1>
-        <p class="font-2-l color-5">
+        <p class="font-2-l color-5 fadeInDown" data-anime="400">
           Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.
         </p>
-        <a class="btn" href="./bicicletas.html">Escolha a sua</a>
+        <a class="btn" href="./bicicletas.html" data-anime="600 fadeInDown">Escolha a sua</a>
       </article>
-      <picture>
+      <picture data-anime="800" class="fadeInDown">
         <source media="(max-width: 800px)" srcset="./img/bicicletas/nimbus.jpg">
         <img src="./img/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta elétrica preta.">
       </picture>
@@ -329,6 +329,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/plugins/simple-anime.js"></script>;
   <script src="./js/script.js"></script>
 </body>
 

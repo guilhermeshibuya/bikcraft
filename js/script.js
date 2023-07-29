@@ -42,3 +42,6 @@ gallery.forEach((img) => {
     if (matchMedia("(min-width: 950px)").matches) galleryContainer.prepend(img);
   });
 });
+
+// ANIMAÇÃO
+if (window.SimpleAnime) new SimpleAnime();
