@@ -1,7 +1,8 @@
 # 🚲 Bikcraft
 
 Este é o projeto Bikcraft, desenvolvido como parte do curso da [Origamid](https://www.origamid.com/). O objetivo deste projeto é criar um site fictício para a venda de bicicletas elétricas personalizadas e feitas sob medida para o cliente. O site foi desenvolvido utilizando HTML, CSS e JavaScript.
-Para visualizar o projeto: [Bikcraft](https://guilhermeshibuya.github.io/bikcraft/contato.html)
+
+Para visualizar o projeto: [Bikcraft](https://guilhermeshibuya.github.io/bikcraft/)
 
 # 📋 Visão Geral
 
